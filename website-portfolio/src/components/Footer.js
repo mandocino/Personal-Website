@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <div>
-      This is the Footer section.
+    <div class="text-center">
+      Created By Armando Mancino. © 2024 All rights reserved.
     </div>
   );
 }
