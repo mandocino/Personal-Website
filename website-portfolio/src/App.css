@@ -1,25 +1,129 @@
 .App {
-    text-align: center;
-  }
-  
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
   }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  to {
+    transform: rotate(360deg);
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* src/App.css or relevant CSS file */
+.bullet-list {
+  list-style: none; /* Remove default list styling */
+  padding-left: 0; /* Remove default padding */
+  display: flex; /* Use flexbox to align items inline */
+  gap: 1em; /* Space between items */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+.bullet-list li {
+  position: relative; /* Position relative for pseudo-element */
+  padding-left: 2em; /* Space for the bullet point */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Align items inline */
+  align-items: center; /* Vertically center the text */
+}
+
+.bullet-list li::before {
+  content: '•'; /* Bullet point character */
+  color: green; /* Bullet point color */
+  position: absolute;
+  left: 0; /* Position bullet point to the left */
+  top: 50%; /* Vertically center the bullet point */
+  transform: translateY(-50%); /* Adjust alignment */
+  font-size: 1.5em; /* Adjust size of the bullet point */
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay-content {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img {
+  transform: scale(1.1);
+}
+
+.card:hover .overlay-content {
+  opacity: 1;
+}
+
+@keyframes scrollInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.scroll-in-left {
+  animation: scrollInLeft 1s ease-out;
+}
+
+.scroll-in-right {
+  animation: scrollInRight 1s ease-out;
+}

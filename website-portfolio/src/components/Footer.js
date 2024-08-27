@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div class="text-center">
+    <div className="text-center">
       Created By Armando Mancino. © 2024 All rights reserved.
     </div>
   );
