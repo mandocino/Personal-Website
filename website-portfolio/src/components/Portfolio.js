@@ -21,7 +21,7 @@ function Portfolio() {
                 </p>
                 <div className="d-flex gap-3">
                   <a
-                    href="https://github.com/your-repo1"
+                    href="https://github.com/mandocino/Stock-Analyzer"
                     className="text-white"
                   >
                     <i className="fab fa-github fa-2x"></i>
@@ -53,7 +53,7 @@ function Portfolio() {
                 </p>
                 <div className="d-flex gap-3">
                   <a
-                    href="https://github.com/your-repo1"
+                    href="https://github.com/mandocino/Trading-Bot-MACD"
                     className="text-white"
                   >
                     <i className="fab fa-github fa-2x"></i>
@@ -83,7 +83,7 @@ function Portfolio() {
                 </p>
                 <div className="d-flex gap-3">
                   <a
-                    href="https://github.com/your-repo1"
+                    href="https://github.com/mandocino/Stock-Sector-Search"
                     className="text-white"
                   >
                     <i className="fab fa-github fa-2x"></i>
@@ -116,12 +116,6 @@ function Portfolio() {
                 </p>
                 <div className="d-flex gap-3">
                   <a
-                    href="https://github.com/your-repo1"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                  <a
                     href="https://test85908.live-website.com/"
                     className="text-white"
                   >
@@ -148,7 +142,7 @@ function Portfolio() {
                 </p>
                 <div className="d-flex gap-3">
                   <a
-                    href="https://github.com/your-repo1"
+                    href="https://github.com/mandocino/Stock-Volume-Scanner"
                     className="text-white"
                   >
                     <i className="fab fa-github fa-2x"></i>
@@ -178,7 +172,7 @@ function Portfolio() {
                 </p>
                 <div className="d-flex gap-3">
                   <a
-                    href="https://github.com/your-repo1"
+                    href="https://github.com/Cinodevv/CryptoDashboard"
                     className="text-white"
                   >
                     <i className="fab fa-github fa-2x"></i>
@@ -209,7 +203,7 @@ function Portfolio() {
                 </p>
                 <div className="d-flex gap-3">
                   <a
-                    href="https://github.com/your-repo1"
+                    href="https://github.com/Cinodevv/CryptoDashApi"
                     className="text-white"
                   >
                     <i className="fab fa-github fa-2x"></i>
@@ -240,7 +234,7 @@ function Portfolio() {
                 </p>
                 <div className="d-flex gap-3">
                   <a
-                    href="https://github.com/your-repo1"
+                    href="https://github.com/mandocino/Stock-Analyzer"
                     className="text-white"
                   >
                     <i className="fab fa-github fa-2x"></i>

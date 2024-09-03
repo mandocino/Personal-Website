@@ -127,3 +127,22 @@ html {
 .scroll-in-right {
   animation: scrollInRight 1s ease-out;
 }
+
+.icon-text-wrapper {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-text-wrapper:hover {
+  transform: scale(1.2);
+}
+
+.interactive-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.interactive-text {
+  text-align: center;
+  margin-top: 0.5rem;
+}

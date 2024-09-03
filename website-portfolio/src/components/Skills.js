@@ -44,17 +44,17 @@ function Skills() {
   const renderSection = (title, items) => (
     <div>
       <h3 className="text-center">{title}</h3>
-      <div className="row">
+      <div className="row justify-content-center">
         {items.map((item, index) => (
-          <div className="col-md-2 mb-4" key={index}>
-            <div className="card text-center border-0">
-              <div className="card-body">
+          <div className="col-4 col-md-2 mb-1" key={index}>
+            <div className="card text-center border-0 p-1">
+              <div className="card-body p-1 icon-text-wrapper">
                 {item.image ? (
-                  <img src={item.image} alt={item.name} style={{ width: '3rem', height: '3rem' }} />
+                  <img src={item.image} alt={item.name} className="interactive-icon" style={{ width: '2.5rem', height: '2.5rem' }} />
                 ) : (
-                  <i className={`${item.icon} fa-3x`} style={{ color: item.color }}></i>
+                  <i className={`${item.icon} fa-2x interactive-icon`} style={{ color: item.color }}></i>
                 )}
-                <h6 className="card-title">{item.name}</h6>
+                <h6 className="card-title mt-1 interactive-text">{item.name}</h6>
               </div>
             </div>
           </div>
@@ -62,9 +62,8 @@ function Skills() {
       </div>
     </div>
   );
-
   return (
-    <div className="container my-5">
+    <div className="container my-2">
       {renderSection('Programming Languages', programmingLanguages)}
       {renderSection('Applications', applications)}
       {renderSection('Frameworks/Tools', frameworks)}
