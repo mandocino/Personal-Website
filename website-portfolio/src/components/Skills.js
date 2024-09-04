@@ -43,12 +43,12 @@ function Skills() {
 
   const renderSection = (title, items) => (
     <div>
-      <h3 className="text-center">{title}</h3>
+      <h3 className="text-center mb-4">{title}</h3>
       <div className="row justify-content-center">
         {items.map((item, index) => (
-          <div className="col-4 col-md-2 mb-1" key={index}>
-            <div className="card text-center border-0 p-1">
-              <div className="card-body p-1 icon-text-wrapper">
+          <div className="col-2 mb-1" key={index}>
+            <div className="card-skills text-center border-0 p-1">
+              <div className="card-body p-2 icon-text-wrapper">
                 {item.image ? (
                   <img src={item.image} alt={item.name} className="interactive-icon" style={{ width: '2.5rem', height: '2.5rem' }} />
                 ) : (
@@ -62,8 +62,9 @@ function Skills() {
       </div>
     </div>
   );
+  
   return (
-    <div className="container my-2">
+    <div className="container">
       {renderSection('Programming Languages', programmingLanguages)}
       {renderSection('Applications', applications)}
       {renderSection('Frameworks/Tools', frameworks)}

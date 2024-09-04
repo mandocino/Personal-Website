@@ -4,7 +4,7 @@ function Portfolio() {
   return (
     <div>
       <div className="container">
-        <h1 className="text-center mb-2">Portfolio</h1>
+        <h1 className="text-center mb-4">Portfolio</h1>
         <div className="row">
           <div className="col-md-3">
             <div className="card text-white bg-dark text-center mb-4">
