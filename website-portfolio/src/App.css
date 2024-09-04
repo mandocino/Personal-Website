@@ -155,3 +155,7 @@ html {
   text-align: center;
   margin-top: 0.5rem;
 }
+
+.section {
+  padding-top: 70px; /* Adjust based on the height of your navbar */
+}

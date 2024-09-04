@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div id="about" className="container pb-4">
+    <div id="about" className="section container pb-4">
       <div className="row align-items-center">
         <div className="col-lg-6 mb-lg-0">
           <div className="p-4">
@@ -12,12 +12,12 @@ function About() {
           </div>
         </div>
         <div className="col-lg-6">
-          <img 
-            src="/profile_img.jpg" 
+          <img
+            src="/profile_img.jpg"
             height="800"
             width="500"
-            alt="Armando Mancino" 
-            className="img-fluid rounded" 
+            alt="Armando Mancino"
+            className="img-fluid rounded"
           />
         </div>
       </div>
