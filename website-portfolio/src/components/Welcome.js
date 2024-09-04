@@ -30,11 +30,11 @@ function Welcome() {
         <div className="text-center pb-5">
           <p>
             <a href="/ArmandoResume.pdf">
-            <button
-              type="button"
-              className="btn btn-outline-primary btn-lg mx-2"
-            >
-              Resume
+              <button
+                type="button"
+                className="btn btn-outline-primary btn-lg mx-2"
+              >
+                Resume
               </button>
             </a>
             <button
@@ -43,12 +43,14 @@ function Welcome() {
             >
               Degree
             </button>
-            <button
-              type="button"
-              className="btn btn-outline-secondary btn-lg mx-2"
-            >
-              About Me
-            </button>
+            <a href="#about">
+              <button
+                type="button"
+                className="btn btn-outline-secondary btn-lg mx-2"
+              >
+                About Me
+              </button>
+            </a>
           </p>
         </div>
       </div>
