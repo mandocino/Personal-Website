@@ -1,7 +1,7 @@
 function Welcome() {
   return (
     <>
-      <div className="d-flex flex-column justify-content-center align-items-center vh-100">
+      <div id="welcome" className="d-flex flex-column justify-content-center align-items-center vh-100">
         <div className="text-center pb-5">
           <h1 className="scroll-in-left">Hi there! 👋 I am</h1>
           <h1 className="scroll-in-right">Armando Mancino.</h1>

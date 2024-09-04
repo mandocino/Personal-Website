@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="container pb-4">
+    <div id="about" className="container pb-4">
       <div className="row align-items-center">
         <div className="col-lg-6 mb-lg-0">
           <div className="p-4">

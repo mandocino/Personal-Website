@@ -42,7 +42,7 @@ function Skills() {
   ];
 
   const renderSection = (title, items) => (
-    <div>
+    <div id="skills">
       <h3 className="text-center mb-4">{title}</h3>
       <div className="row justify-content-center">
         {items.map((item, index) => (
