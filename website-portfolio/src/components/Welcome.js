@@ -29,12 +29,14 @@ function Welcome() {
         </div>
         <div className="text-center pb-5">
           <p>
+            <a href="/ArmandoResume.pdf">
             <button
               type="button"
               className="btn btn-outline-primary btn-lg mx-2"
             >
               Resume
-            </button>
+              </button>
+            </a>
             <button
               type="button"
               className="btn btn-outline-success btn-lg mx-2"
