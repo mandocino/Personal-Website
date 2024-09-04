@@ -29,7 +29,8 @@ function Welcome() {
         </div>
         <div className="text-center pb-5">
           <p>
-            <a href="/ArmandoResume.pdf">
+            <a href="/ArmandoResume.pdf"
+              target="_blank" >
               <button
                 type="button"
                 className="btn btn-outline-primary btn-lg mx-2"

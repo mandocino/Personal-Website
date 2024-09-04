@@ -13,7 +13,7 @@ const Header = () => {
             <Nav.Link href="#portfolio" className="text-white fs-5 mx-3">Portfolio</Nav.Link>
             <Nav.Link href="#skills" className="text-white fs-5 mx-3">Skills</Nav.Link>
             <Nav.Link href="#contact" className="text-white fs-5 mx-3">Contact</Nav.Link>
-            <Nav.Link href="/ArmandoResume.pdf" className="text-white fs-5 mx-3 d-inline-block border border-white rounded px-3 py-2">Resume</Nav.Link>
+            <Nav.Link href="/ArmandoResume.pdf" target="_blank" className="text-white fs-5 mx-3 d-inline-block border border-white rounded px-3 py-2">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
