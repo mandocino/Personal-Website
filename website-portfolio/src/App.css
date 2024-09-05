@@ -159,3 +159,41 @@ html {
 .section {
   padding-top: 70px; /* Adjust based on the height of your navbar */
 }
+
+/* Custom Colors */
+/* In your custom CSS file */
+.bg-darkBlue {
+  background-color: #000f54;
+}
+
+.text-darkBlue {
+  color: #000f54; /* Replace with your custom color */
+}
+
+.bg-lighterDarkBlue{
+  background-color: #011987;
+}
+
+.text-White {
+  color: #ffffff; /* Default white color */
+}
+
+.wh-White {
+  color: #ffffff; /* Default white color */
+  transition: color 0.1s ease; /* Smooth transition effect */
+}
+
+.wh-White:hover {
+  color: #ccccccb9; /* Slightly darker color on hover */
+}
+
+.border-White {
+  border: 1px solid #ffffff; /* Default white border */
+  transition: border-color 0.1s ease; /* Smooth transition effect */
+}
+
+.border-White:hover {
+  border-color: #ccccccb9; /* Slightly darker color on hover */
+}
+
+

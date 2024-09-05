@@ -20,7 +20,7 @@ function App() {
   return (
     <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
       <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      <Welcome />
+      <Welcome isDarkMode={isDarkMode} />
       <About />
       <Portfolio />
       <Skills />
