@@ -1,14 +1,36 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 function Contact() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here (e.g., send data to a server)
-    alert(`Email: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+
+    const templateParams = {
+      from_email: email,
+      subject: subject,
+      message: message,
+    };
+
+    emailjs
+      .send('service_srdzbaw', 'template_gzfjzo8', templateParams, 'jzDIuMStZa4IJDchf')
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          setStatus('Message sent successfully!');
+          setEmail('');
+          setSubject('');
+          setMessage('');
+        },
+        (err) => {
+          console.log('FAILED...', err);
+          setStatus('Failed to send the message.');
+        }
+      );
   };
 
   return (
@@ -17,6 +39,7 @@ function Contact() {
         <div className="col-md-8 col-lg-6">
           <div className="p-4 shadow-sm">
             <h2 className="mb-4">Contact Me</h2>
+            {status && <p>{status}</p>}
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
