@@ -37,9 +37,9 @@ function Contact() {
     <div id="contact" className="container my-5">
       <hr></hr>
       <div className="row justify-content-center">
+        <h1 className="text-center mb-4">Contact Me</h1>
         <div className="col-md-8 col-lg-6">
           <div className="p-4 shadow-sm">
-            <h2 className="mb-4">Contact Me</h2>
             {status && <p>{status}</p>}
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
