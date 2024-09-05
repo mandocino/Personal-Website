@@ -7,8 +7,8 @@ function About() {
         <div className="col-lg-6 mb-lg-0">
           <div className="p-4">
             <p className="fs-3">
-              Welcome to my website! I am Armando Mancino, a Software Engineer from Montreal, Canada. I have been programming for over 11 years and know a variety of languages. I have experience as a full stack engineer, working on both front-end and low-level systems development.
-              Explore my work to see if my talents are a good fit for your needs.
+              Welcome to my website! I’m Armando Mancino, a Software Engineer based in Montreal, Canada. With over 11 years of programming experience, I’ve developed expertise in a wide range of languages and technologies.
+              My background includes working as a full stack engineer, handling both front-end development and low-level systems programming. Explore my work to see how my skills and experience align with your needs.
             </p>
           </div>
         </div>
