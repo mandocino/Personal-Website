@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-function Contact() {
+function Contact({ isDarkMode }) {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
@@ -34,16 +34,16 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="container my-5 bg-[#F3F4F6] text-[#111827]">
-      <hr className="border-[#3B82F6]" />
+    <div id="contact" className="container">
+      <hr className={`${isDarkMode ? 'text-White' : 'bg-light'}`} />
       <div className="row justify-content-center">
-        <h1 className="text-center mb-4 text-[#1E3A8A]">Contact Me</h1>
+        <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'bg-light'}`}>Contact Me</h1>
         <div className="col-md-8 col-lg-6">
           <div className="p-4 shadow-sm">
             {status && <p>{status}</p>}
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
-                <label htmlFor="email" className="form-label text-[#111827]">
+                <label htmlFor="email" className={`form-label ${isDarkMode ? 'text-White' : 'bg-light'}`}>
                   Email address
                 </label>
                 <input
@@ -57,7 +57,7 @@ function Contact() {
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="subject" className="form-label text-[#111827]">
+                <label htmlFor="subject" className={`form-label ${isDarkMode ? 'text-White' : 'bg-light'}`}>
                   Subject
                 </label>
                 <input
@@ -71,7 +71,7 @@ function Contact() {
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="message" className="form-label text-[#111827]">
+                <label htmlFor="message" className={`form-label ${isDarkMode ? 'text-White' : 'bg-light'}`}>
                   Message
                 </label>
                 <textarea
@@ -85,14 +85,14 @@ function Contact() {
                 ></textarea>
               </div>
               <div className="d-flex justify-content-between">
-                <button type="submit" className="btn btn-primary text-white bg-[#3B82F6] border-0">
+                <button type="submit" className={`btn wh-White border-White`}>
                   Send
                 </button>
                 <a
                   href="mailto:armando.mancino@outlook.com"
                   title="Send email externally with Outlook"
                 >
-                  <i className="fas fa-external-link-alt fa-2x text-[#3B82F6]"></i>
+                  <i className={`fas fa-external-link-alt fa-2x wh-White`}></i>
                 </a>
               </div>
             </form>

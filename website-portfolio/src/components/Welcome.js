@@ -3,7 +3,7 @@ function Welcome({ isDarkMode }) {
     <>
       <div
         id="welcome"
-        expand="lg" className={`d-flex flex-column justify-content-center align-items-center vh-100 ${isDarkMode ? 'bg-darkBlue' : 'bg-light'}`}
+        expand="lg" className="d-flex flex-column justify-content-center align-items-center vh-100"
       >
 
         <div className="text-center pb-5">

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Portfolio() {
+function Portfolio({ isDarkMode }) {
   return (
     <div id="portfolio">
       <div className="section container">
-        <hr></hr>
-        <h1 className="text-center mb-4">Portfolio</h1>
+        <hr className={`${isDarkMode ? 'text-White' : 'bg-light'}`} />
+        <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'bg-light'}`}>Portfolio</h1>
         <div className="row">
           <div className="col-md-3">
             <div className="card text-white bg-dark text-center mb-4">

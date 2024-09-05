@@ -18,14 +18,14 @@ function App() {
   };
 
   return (
-    <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
+    <div className={isDarkMode ? 'bg-darkBlue' : 'light-mode'}>
       <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Welcome isDarkMode={isDarkMode} />
-      <About />
-      <Portfolio />
-      <Skills />
-      <Contact />
-      <Footer />
+      <About isDarkMode={isDarkMode} />
+      <Portfolio isDarkMode={isDarkMode} />
+      <Skills isDarkMode={isDarkMode} />
+      <Contact isDarkMode={isDarkMode} />
+      <Footer isDarkMode={isDarkMode} />
     </div>
   );
 }
