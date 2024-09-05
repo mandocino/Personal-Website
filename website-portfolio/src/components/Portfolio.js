@@ -251,6 +251,103 @@ function Portfolio() {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col-md-3">
+            <div className="card text-white bg-dark text-center mb-4">
+              <img
+                src="/iku.PNG"
+                className="card-img"
+                alt="Project 1"
+              />
+              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
+                <h5 className="card-title mb-3">IKU App</h5>
+                <p className="card-title mb-3 p-2">
+                  Allow users to evaluate public transit accessibility in their personal points of interest.
+                </p>
+                <div className="d-flex gap-3">
+                  <a
+                    href="https://github.com/mandocino/SOEN490"
+                    className="text-white"
+                  >
+                    <i className="fab fa-github fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className="card text-white bg-dark text-center mb-4">
+              <img
+                src="/telegram-buynsell.PNG"
+                className="card-img"
+                alt="Project 1"
+              />
+              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
+                <h5 className="card-title mb-3">Transaction Bot</h5>
+                <p className="card-title mb-3 p-2">
+                  Scans the blockchain for a contract address and notifies through a message on telegram when details of a buy or sell that happens.
+                </p>
+                <div className="d-flex gap-3">
+                  <a
+                    href="https://github.com/mandocino/Transaction-Bot"
+                    className="text-white"
+                  >
+                    <i className="fab fa-github fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className="card text-white bg-dark text-center mb-4">
+              <img
+                src="/aggregator.PNG"
+                className="card-img"
+                alt="Project 1"
+              />
+              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
+                <h5 className="card-title mb-3">Aggregator</h5>
+                <p className="card-title mb-3 p-2">
+                  Condenses many crypto exchange order books into one order book and charts it.
+                </p>
+                <div className="d-flex gap-3">
+                  <a
+                    href="https://github.com/mandocino/Order-Book-Aggregator"
+                    className="text-white"
+                  >
+                    <i className="fab fa-github fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className="card text-white bg-dark text-center mb-4">
+              <img
+                src="/arbitrage.PNG"
+                className="card-img"
+                alt="Project 1"
+              />
+              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
+                <h5 className="card-title mb-3">Arbitrage Bot</h5>
+                <p className="card-title mb-3 p-2">
+                  Scans various desired crypto exchanges and identifies when an opportunity exists to arbitrage trade.
+                </p>
+                <div className="d-flex gap-3">
+                  <a
+                    href="https://github.com/mandocino/Arbitrage-Bot"
+                    className="text-white"
+                  >
+                    <i className="fab fa-github fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
