@@ -1,8 +1,8 @@
 function About() {
   return (
-    <div id="about" className="section container pb-4">
-      <hr></hr>
-      <h1 className="text-center mb-4">About Me</h1>
+    <div id="about" className="section container pb-4 bg-[#F3F4F6] text-[#111827]">
+      <hr className="border-[#3B82F6]" />
+      <h1 className="text-center mb-4 text-[#1E3A8A]">About Me</h1>
       <div className="row align-items-center">
         <div className="col-lg-6 mb-lg-0">
           <div className="p-4">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -11,16 +11,22 @@ import Skills from "./components/Skills";
 import Welcome from "./components/Welcome";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <>
-      <Header />
+    <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
+      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Welcome />
       <About />
       <Portfolio />
       <Skills />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
