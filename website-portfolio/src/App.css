@@ -41,31 +41,30 @@ html {
   scroll-behavior: smooth;
 }
 
-/* src/App.css or relevant CSS file */
 .bullet-list {
-  list-style: none; /* Remove default list styling */
-  padding-left: 0; /* Remove default padding */
-  display: flex; /* Use flexbox to align items inline */
-  gap: 1em; /* Space between items */
-  flex-wrap: wrap; /* Allow wrapping if needed */
+  list-style: none; 
+  padding-left: 0; 
+  display: flex; 
+  gap: 1em; 
+  flex-wrap: wrap; 
 }
 
 .bullet-list li {
-  position: relative; /* Position relative for pseudo-element */
-  padding-left: 2em; /* Space for the bullet point */
-  margin: 0; /* Remove default margin */
-  display: flex; /* Align items inline */
-  align-items: center; /* Vertically center the text */
+  position: relative; 
+  padding-left: 2em; 
+  margin: 0; 
+  display: flex; 
+  align-items: center; 
 }
 
 .bullet-list li::before {
-  content: '•'; /* Bullet point character */
-  color: green; /* Bullet point color */
+  content: '•';
+  color: green; 
   position: absolute;
-  left: 0; /* Position bullet point to the left */
-  top: 50%; /* Vertically center the bullet point */
-  transform: translateY(-50%); /* Adjust alignment */
-  font-size: 1.5em; /* Adjust size of the bullet point */
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%);
+  font-size: 1.5em; 
 }
 
 .card {
@@ -157,43 +156,65 @@ html {
 }
 
 .section {
-  padding-top: 70px; /* Adjust based on the height of your navbar */
+  padding-top: 70px; 
 }
 
 /* Custom Colors */
-/* In your custom CSS file */
 .bg-darkBlue {
   background-color: #000f54;
 }
 
 .text-darkBlue {
-  color: #000f54; /* Replace with your custom color */
+  color: #000a38; 
 }
-
 .bg-lighterDarkBlue{
   background-color: #011987;
 }
 
+.bg-lightBlue {
+  background-color: #A2BFFE;
+}
+
 .text-White {
-  color: #ffffff; /* Default white color */
+  color: #ffffff; 
+}
+
+.text-Black {
+  color: #000000; 
 }
 
 .wh-White {
-  color: #ffffff; /* Default white color */
-  transition: color 0.1s ease; /* Smooth transition effect */
+  color: #ffffff; 
+  transition: color 0.1s ease; 
 }
 
 .wh-White:hover {
-  color: #ccccccb9; /* Slightly darker color on hover */
+  color: #ccccccb9; 
 }
 
 .border-White {
-  border: 1px solid #ffffff; /* Default white border */
-  transition: border-color 0.1s ease; /* Smooth transition effect */
+  border: 1px solid #ffffff; 
+  transition: border-color 0.1s ease; 
 }
 
 .border-White:hover {
-  border-color: #ccccccb9; /* Slightly darker color on hover */
+  border-color: #ccccccb9; 
 }
 
+.border-Black {
+  border: 1px solid #000000; 
+  transition: border-color 0.1s ease; 
+}
 
+.border-Black:hover {
+  border-color: #2e2e2eb9; 
+}
+
+.wh-Black {
+  color: #000000; 
+  transition: color 0.1s ease; 
+}
+
+.wh-Black:hover {
+  color: #2e2e2eb9; 
+}

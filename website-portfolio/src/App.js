@@ -11,14 +11,14 @@ import Skills from "./components/Skills";
 import Welcome from "./components/Welcome";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
 
   return (
-    <div className={isDarkMode ? 'bg-darkBlue' : 'light-mode'}>
+    <div className={isDarkMode ? 'bg-darkBlue' : 'bg-light'}>
       <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Welcome isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />

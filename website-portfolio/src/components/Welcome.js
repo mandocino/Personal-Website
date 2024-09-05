@@ -7,12 +7,12 @@ function Welcome({ isDarkMode }) {
       >
 
         <div className="text-center pb-5">
-          <h1 className={`scroll-in-left ${isDarkMode ? 'text-White' : 'bg-light'}`}>Hi there! 👋 I am</h1>
-          <h1 className={`"scroll-in-right mb-4 ${isDarkMode ? 'text-White' : 'bg-light'}`}>Armando Mancino.</h1>
+          <h1 className={`scroll-in-left ${isDarkMode ? 'text-White' : 'text-black'}`}>Hi there! 👋 I am</h1>
+          <h1 className={`scroll-in-right mb-4 ${isDarkMode ? 'text-White' : 'text-black'}`}>Armando Mancino.</h1>
           <a
             href="https://github.com/mandocino"
             target="_blank"
-            className={`fs-5 mx-4 ${isDarkMode ? 'wh-White' : 'color-darkBlue'
+            className={`fs-5 mx-4 ${isDarkMode ? 'wh-White' : 'wh-Black'
               }`}
           >
             <i className="fab fa-github fa-2x"></i>
@@ -20,7 +20,7 @@ function Welcome({ isDarkMode }) {
           <a
             href="https://www.linkedin.com/in/armando-mancino-81382b170/"
             target="_blank"
-            className={`fs-5 ${isDarkMode ? 'wh-White' : 'text-[#3B82F6]'
+            className={`fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'
               }`}
           >
             <i className="fab fa-linkedin fa-2x"></i>
@@ -33,21 +33,21 @@ function Welcome({ isDarkMode }) {
               <ul className="list-unstyled d-inline mb-0">
                 <li className={`d-inline-block mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
                   <i
-                    className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-[#3B82F6]'
+                    className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-Black'
                       }`}
                   ></i>
                   Full Stack Developer
                 </li>
                 <li className={`d-inline-block mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
                   <i
-                    className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-[#3B82F6]'
+                    className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-Black'
                       }`}
                   ></i>
                   Low Level Engineer
                 </li>
                 <li className={`d-inline-block mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
                   <i
-                    className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-[#3B82F6]'
+                    className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-Black'
                       }`}
                   ></i>
                   Front-End Programmer
@@ -63,7 +63,7 @@ function Welcome({ isDarkMode }) {
                 type="button"
                 className={`btn btn-lg mx-2 ${isDarkMode
                   ? 'wh-White border-White'
-                  : 'text-[#1E3A8A] border-[#1E3A8A]'
+                  : 'wh-Black border-Black'
                   }`}
               >
                 Resume
@@ -74,7 +74,7 @@ function Welcome({ isDarkMode }) {
                 type="button"
                 className={`btn btn-lg mx-2 ${isDarkMode
                   ? 'wh-White border-White'
-                  : 'text-[#3B82F6] border-[#3B82F6]'
+                  : 'wh-Black border-Black'
                   }`}
               >
                 Degree
@@ -85,7 +85,7 @@ function Welcome({ isDarkMode }) {
                 type="button"
                 className={`btn btn-lg mx-2 ${isDarkMode
                   ? 'wh-White border-White'
-                  : 'text-White border-[#60A5FA]'
+                  : 'wh-Black border-Black'
                   }`}
               >
                 About Me

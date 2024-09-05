@@ -4,8 +4,8 @@ function Portfolio({ isDarkMode }) {
   return (
     <div id="portfolio">
       <div className="section container">
-        <hr className={`${isDarkMode ? 'text-White' : 'bg-light'}`} />
-        <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'bg-light'}`}>Portfolio</h1>
+        <hr className={`${isDarkMode ? 'text-White' : 'text-Black'}`} />
+        <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'text-Black'}`}>Portfolio</h1>
         <div className="row">
           <div className="col-md-3">
             <div className="card text-white bg-dark text-center mb-4">

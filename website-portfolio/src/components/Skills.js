@@ -40,7 +40,7 @@ function Skills({ isDarkMode }) {
 
   const renderSection = (title, items) => (
     <div>
-      <h3 id="skills" className={`section text-center mb-4 ${isDarkMode ? 'text-White' : 'bg-light'}`}>{title}</h3>
+      <h3 id="skills" className={`section text-center mb-4 ${isDarkMode ? 'text-White' : 'text-Black'}`}>{title}</h3>
       <div className="row justify-content-center">
         {items.map((item, index) => (
           <div className="col-2 mb-1" key={index}>
@@ -51,7 +51,7 @@ function Skills({ isDarkMode }) {
                 ) : (
                   <i className={`${item.icon} fa-2x interactive-icon`} style={{ color: item.color }}></i>
                 )}
-                <h6 className={`card-title mt-1 interactive-text ${isDarkMode ? 'text-White' : 'bg-light'}`}>{item.name}</h6>
+                <h6 className={`card-title mt-1 interactive-text ${isDarkMode ? 'text-White' : 'text-Black'}`}>{item.name}</h6>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ function Skills({ isDarkMode }) {
 
   return (
     <div className="container">
-      <hr className={`${isDarkMode ? 'text-White' : 'bg-light'}`} />
+      <hr className={`${isDarkMode ? 'text-White' : 'text-Black'}`} />
       {renderSection('Programming Languages', programmingLanguages)}
       {renderSection('Frameworks', frameworks)}
       {renderSection('Tools/Applications', toolsApplications)}

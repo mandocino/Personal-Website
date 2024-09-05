@@ -35,15 +35,15 @@ function Contact({ isDarkMode }) {
 
   return (
     <div id="contact" className="container">
-      <hr className={`${isDarkMode ? 'text-White' : 'bg-light'}`} />
+      <hr className={`${isDarkMode ? 'text-White' : 'text-Black'}`} />
       <div className="row justify-content-center">
-        <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'bg-light'}`}>Contact Me</h1>
+        <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'text-Black'}`}>Contact Me</h1>
         <div className="col-md-8 col-lg-6">
           <div className="p-4 shadow-sm">
             {status && <p>{status}</p>}
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
-                <label htmlFor="email" className={`form-label ${isDarkMode ? 'text-White' : 'bg-light'}`}>
+                <label htmlFor="email" className={`form-label ${isDarkMode ? 'text-White' : 'text-Black'}`}>
                   Email address
                 </label>
                 <input
@@ -57,7 +57,7 @@ function Contact({ isDarkMode }) {
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="subject" className={`form-label ${isDarkMode ? 'text-White' : 'bg-light'}`}>
+                <label htmlFor="subject" className={`form-label ${isDarkMode ? 'text-White' : 'text-Black'}`}>
                   Subject
                 </label>
                 <input
@@ -71,7 +71,7 @@ function Contact({ isDarkMode }) {
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="message" className={`form-label ${isDarkMode ? 'text-White' : 'bg-light'}`}>
+                <label htmlFor="message" className={`form-label ${isDarkMode ? 'text-White' : 'text-Black'}`}>
                   Message
                 </label>
                 <textarea
@@ -85,14 +85,14 @@ function Contact({ isDarkMode }) {
                 ></textarea>
               </div>
               <div className="d-flex justify-content-between">
-                <button type="submit" className={`btn wh-White border-White`}>
+                <button type="submit" className={`btn ${isDarkMode ? 'wh-White border-White' : 'wh-Black border-Black'}`}>
                   Send
                 </button>
                 <a
                   href="mailto:armando.mancino@outlook.com"
                   title="Send email externally with Outlook"
                 >
-                  <i className={`fas fa-external-link-alt fa-2x wh-White`}></i>
+                  <i className={`fas fa-external-link-alt fa-2x ${isDarkMode ? 'wh-White' : 'wh-Black'}`}></i>
                 </a>
               </div>
             </form>
