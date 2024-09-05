@@ -35,6 +35,7 @@ function Contact() {
 
   return (
     <div id="contact" className="container my-5">
+      <hr></hr>
       <div className="row justify-content-center">
         <div className="col-md-8 col-lg-6">
           <div className="p-4 shadow-sm">

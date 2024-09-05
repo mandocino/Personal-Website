@@ -38,12 +38,16 @@ function Welcome() {
                 Resume
               </button>
             </a>
-            <button
-              type="button"
-              className="btn btn-outline-success btn-lg mx-2"
-            >
-              Degree
-            </button>
+            <a href="/degree.pdf"
+              target="_blank" >
+              <button
+                type="button"
+                className="btn btn-outline-success btn-lg mx-2"
+              >
+                Degree
+              </button>
+            </a>
+
             <a href="#about">
               <button
                 type="button"

@@ -65,6 +65,7 @@ function Skills() {
 
   return (
     <div className="container">
+      <hr></hr>
       {renderSection('Programming Languages', programmingLanguages)}
       {renderSection('Applications', applications)}
       {renderSection('Frameworks/Tools', frameworks)}
