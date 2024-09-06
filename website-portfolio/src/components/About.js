@@ -6,7 +6,7 @@ function About({ isDarkMode }) {
       <div className="row align-items-center">
         <div className="col-lg-6 mb-lg-0">
           <div className="p-4">
-            <p className={`fs-3 ${isDarkMode ? 'text-White' : 'text-Black'}`}>
+            <p className={`fs-3 text-center ${isDarkMode ? 'text-White' : 'text-Black'}`}>
               Welcome to my website! I’m Armando Mancino, a Software Engineer based in Montreal, Canada. With over 11 years of programming experience, I’ve developed expertise in a wide range of languages and technologies.
               My background includes working as a full stack engineer, handling both front-end development and low-level systems programming. Explore my work to see how my skills and experience align with your needs.
             </p>
