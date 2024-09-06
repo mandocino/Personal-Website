@@ -40,7 +40,7 @@ function Contact({ isDarkMode }) {
         <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'text-Black'}`}>Contact Me</h1>
         <div className="col-md-8 col-lg-6">
           <div className="p-4 shadow-sm">
-            {status && <p>{status}</p>}
+            {status && <p className={`${isDarkMode ? 'text-White' : 'text-Black'}`}>{status}</p>}
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="email" className={`form-label ${isDarkMode ? 'text-White' : 'text-Black'}`}>
