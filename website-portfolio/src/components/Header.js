@@ -6,7 +6,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
   return (
     <Navbar id="nav" expand="lg" className={`fixed-top ${isDarkMode ? 'bg-lighterDarkBlue' : 'bg-lightBlue'}`}>
       <Container>
-        <Navbar.Brand href="#nav" className={`fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Armando Mancino</Navbar.Brand>
+        <Navbar.Brand href="#welcome" className={`fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Armando Mancino</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto d-lg-flex flex-lg-row flex-column align-items-start">
