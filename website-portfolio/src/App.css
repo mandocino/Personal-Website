@@ -208,3 +208,9 @@ html {
   color: #ffffff;
   border-color: #ffffff;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
