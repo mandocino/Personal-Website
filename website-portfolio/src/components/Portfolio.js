@@ -155,7 +155,7 @@ function Portfolio({ isDarkMode }) {
           <div className="col-md-3">
             <div className="card text-white bg-dark text-center mb-4">
               <img
-                src="/telegram-buynsell.PNG"
+                src="/telegram-buynsell.png"
                 className="card-img"
                 alt="Project 6"
               />
@@ -179,7 +179,7 @@ function Portfolio({ isDarkMode }) {
           <div className="col-md-3">
             <div className="card text-white bg-dark text-center mb-4">
               <img
-                src="/aggregator.PNG"
+                src="/aggregator.png"
                 className="card-img"
                 alt="Project 7"
               />
@@ -203,7 +203,7 @@ function Portfolio({ isDarkMode }) {
           <div className="col-md-3">
             <div className="card text-white bg-dark text-center mb-4">
               <img
-                src="/arbitrage.PNG"
+                src="/arbitrage.png"
                 className="card-img"
                 alt="Project 8"
               />
