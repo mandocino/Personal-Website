@@ -41,9 +41,9 @@ function Skills({ isDarkMode }) {
   const renderSection = (title, items) => (
     <div>
       <h3 id="skills" className={`section text-center mb-4 ${isDarkMode ? 'text-White' : 'text-Black'}`}>{title}</h3>
-      <div className="row justify-content-center">
+      <div className="row justify-content-center text-center">
         {items.map((item, index) => (
-          <div className="col-2 mb-1" key={index}>
+          <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3" key={index}>
             <div className="card-skills text-center border-0 p-1">
               <div className="card-body p-2 icon-text-wrapper">
                 {item.image ? (
@@ -59,6 +59,7 @@ function Skills({ isDarkMode }) {
       </div>
     </div>
   );
+
 
   return (
     <div className="container">

@@ -78,6 +78,7 @@ html {
 
 .card-skills {
   position: relative;
+  margin-left:55px;
   width: 110px;
   height: 110px;
   overflow: hidden;
@@ -217,4 +218,10 @@ html {
 
 .wh-Black:hover {
   color: #2e2e2eb9; 
+}
+
+.wh-White:visited,
+.wh-White:active {
+  color: #ffffff;
+  border-color: #ffffff;
 }
