@@ -43,7 +43,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/backtest.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 2"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">Stock Strategy Tester</h5>
@@ -75,7 +75,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/sectorsearch.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 3"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">Stock Sector Scanner</h5>
@@ -105,7 +105,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/nksdsite.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 4"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">
@@ -133,7 +133,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/iku.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 5"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">IKU App</h5>
@@ -157,7 +157,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/telegram-buynsell.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 6"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">Transaction Bot</h5>
@@ -181,7 +181,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/aggregator.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 7"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">Aggregator</h5>
@@ -205,7 +205,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/arbitrage.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 8"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">Arbitrage Bot</h5>
@@ -230,7 +230,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/volumescanner.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 9"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">Stock Volume Scanner</h5>
@@ -261,7 +261,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/cryptodashboard.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 10"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">Crypto Holdings Dashboard</h5>
@@ -291,7 +291,7 @@ function Portfolio({ isDarkMode }) {
               <img
                 src="/cryptoapi.PNG"
                 className="card-img"
-                alt="Project 1"
+                alt="Project 11"
               />
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">Crypto Api Platform</h5>
