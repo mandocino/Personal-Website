@@ -18,22 +18,22 @@ const Header = ({ toggleTheme, isDarkMode }) => {
             <Nav.Link
               href="/ArmandoResume.pdf"
               target="_blank"
-              className={`fs-5 mx-3 d-inline-block rounded py-2 w-auto ${isDarkMode ? 'border-White text-White' : 'border-Black text-Black'}`}
+              className={`fs-5 rounded ${isDarkMode ? 'border-White text-White' : 'border-Black text-Black'}`}
             >
               Resume
             </Nav.Link>
-
-            {/* Toggle Theme Button with Icons */}
-            <button
-              onClick={toggleTheme}
-              className={`btn btn-${isDarkMode ? 'light' : 'dark'} mt-1 ms-2 w-auto`}
-            >
-              <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
-            </button>
+            <Nav.Link>
+              <button
+                onClick={toggleTheme}
+                className={`btn btn-${isDarkMode ? 'light' : 'dark'}`}
+              >
+                <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
+              </button>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar >
   );
 };
 
