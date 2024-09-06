@@ -3,11 +3,11 @@ import React from 'react';
 function Portfolio({ isDarkMode }) {
   return (
     <div id="portfolio">
-      <div className="section container">
+      <div className="section container-fluid">
         <hr className={`${isDarkMode ? 'text-White' : 'text-Black'}`} />
         <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'text-Black'}`}>Portfolio</h1>
-        <div className="row">
-          <div className="col-md-3">
+        <div className="row g-4">
+          <div className="col-sm-12 col-md-6 col-lg-3 ">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/StockAnalyzer.PNG"
@@ -38,7 +38,7 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/backtest.PNG"
@@ -48,9 +48,8 @@ function Portfolio({ isDarkMode }) {
               <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
                 <h5 className="card-title mb-3">Stock Strategy Tester</h5>
                 <p className="card-title mb-3 p-2">
-                  Website that can create stock strategies based on
-                  various parameters and backtest how profitable it was
-                  using a proprietary library I created.
+                  Website that can create and test trading strategies based on
+                  various parameters, and a proprietary library I created to see how profitable it was.
                 </p>
                 <div className="d-flex gap-3">
                   <a
@@ -70,7 +69,7 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/sectorsearch.PNG"
@@ -100,7 +99,7 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/nksdsite.PNG"
@@ -127,8 +126,8 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-3">
+        <div className="row g-4">
+          <div className="col-sm-12 col-md-6 col-lg-3 ">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/iku.png"
@@ -152,7 +151,7 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3 ">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/telegram-buynsell.png"
@@ -176,7 +175,7 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3 ">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/aggregator.png"
@@ -200,7 +199,7 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3 ">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/arbitrage.png"
@@ -224,8 +223,8 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-3">
+        <div className="row g-4">
+          <div className="col-sm-12 col-md-6 col-lg-3 ">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/volumescanner.PNG"
@@ -256,7 +255,7 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3 ">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/cryptodashboard.PNG"
@@ -286,7 +285,7 @@ function Portfolio({ isDarkMode }) {
             </div>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3 ">
             <div className="card text-white bg-dark text-center mb-4">
               <img
                 src="/cryptoapi.PNG"
