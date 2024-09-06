@@ -131,7 +131,7 @@ function Portfolio({ isDarkMode }) {
           <div className="col-md-3">
             <div className="card text-white bg-dark text-center mb-4">
               <img
-                src="/iku.PNG"
+                src="/iku.png"
                 className="card-img"
                 alt="Project 5"
               />
