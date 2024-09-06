@@ -10,26 +10,26 @@ const Header = ({ toggleTheme, isDarkMode }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto d-lg-flex flex-lg-row flex-column align-items-start">
-            <Nav.Link href="#welcome" className={`fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Home</Nav.Link>
-            <Nav.Link href="#about" className={`fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>About</Nav.Link>
-            <Nav.Link href="#portfolio" className={`fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Portfolio</Nav.Link>
-            <Nav.Link href="#skills" className={`fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Skills</Nav.Link>
-            <Nav.Link href="#contact" className={`fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Contact</Nav.Link>
-            <Nav.Link
+            <Navbar.Brand href="#welcome" className={`mt-1 fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Home</Navbar.Brand>
+            <Navbar.Brand href="#about" className={`mt-1 fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>About</Navbar.Brand>
+            <Navbar.Brand href="#portfolio" className={`mt-1 fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Portfolio</Navbar.Brand>
+            <Navbar.Brand href="#skills" className={`mt-1 fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Skills</Navbar.Brand>
+            <Navbar.Brand href="#contact" className={`mt-1 fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'}`}>Contact</Navbar.Brand>
+            <Navbar.Brand
               href="/ArmandoResume.pdf"
               target="_blank"
-              className={`fs-5 rounded ${isDarkMode ? 'border-White text-White' : 'border-Black text-Black'}`}
+              className={`mt-1 fs-5 rounded ${isDarkMode ? 'border-White wh-White' : 'border-Black wh-Black'}`}
             >
               Resume
-            </Nav.Link>
-            <Nav.Link>
+            </Navbar.Brand>
+            <Navbar.Brand>
               <button
                 onClick={toggleTheme}
                 className={`btn btn-${isDarkMode ? 'light' : 'dark'}`}
               >
                 <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
               </button>
-            </Nav.Link>
+            </Navbar.Brand>
           </Nav>
         </Navbar.Collapse>
       </Container>
