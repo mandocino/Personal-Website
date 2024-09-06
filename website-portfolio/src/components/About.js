@@ -12,7 +12,7 @@ function About({ isDarkMode }) {
             </p>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 d-flex justify-content-center">
           <img
             src="/profile_img.jpg"
             height="800"
