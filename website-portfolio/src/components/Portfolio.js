@@ -50,7 +50,7 @@ function Portfolio({ isDarkMode }) {
                 <p className="card-title mb-3 p-2">
                   Website that can create stock strategies based on
                   various parameters and backtest how profitable it was
-                  using a propiertary library I created.
+                  using a proprietary library I created.
                 </p>
                 <div className="d-flex gap-3">
                   <a
