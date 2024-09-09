@@ -31,21 +31,21 @@ function Welcome({ isDarkMode }) {
             <h1 className={`pb-2 ${isDarkMode ? 'text-White' : 'bg-light'}`}>Software Engineer</h1>
             <h3>
               <ul className="list-unstyled d-inline mb-0">
-                <li className={`d-inline-block mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
+                <li className={`d-inline-block pt-2 mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
                   <i
                     className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-Black'
                       }`}
                   ></i>
                   Full Stack Developer
                 </li>
-                <li className={`d-inline-block mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
+                <li className={`d-inline-block pt-2 mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
                   <i
                     className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-Black'
                       }`}
                   ></i>
                   Low Level Engineer
                 </li>
-                <li className={`d-inline-block mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
+                <li className={`d-inline-block pt-2 mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
                   <i
                     className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-Black'
                       }`}
