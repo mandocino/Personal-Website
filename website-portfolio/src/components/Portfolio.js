@@ -52,6 +52,11 @@ function ProjectCard({ project, index, compact = false }) {
             ))}
           </div>
         </div>
+        {hasPrimaryLink && (
+          <span className="project-card-link-icon" aria-hidden="true">
+            <i className="fas fa-arrow-up-right-from-square" />
+          </span>
+        )}
       </MainContentTag>
 
       <div className="project-links">
@@ -112,7 +117,7 @@ function ProjectGrid({
 
 function Portfolio() {
   const fullPortfolioUrl =
-    process.env.NEXT_PUBLIC_FULL_PORTFOLIO_URL || 'https://armando-mancino.vercel.app/';
+    process.env.NEXT_PUBLIC_FULL_PORTFOLIO_URL || 'https://armandoportfolio.vercel.app/';
 
   return (
     <section id="portfolio" className="section">

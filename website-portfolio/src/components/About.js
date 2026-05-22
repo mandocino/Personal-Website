@@ -1,9 +1,11 @@
 const STATS = [
   { num: '11+', label: 'Years Coding' },
-  { num: '11', label: 'Projects Shipped' },
+  { num: '4+', label: 'Years Professional Experience' },
   { num: '13', label: 'Languages Used' },
 ];
 
+const INTERESTS = ['Weight Lifting', 'Technology', 'Financial Markets', 'Space'];
+const HOBBIES = ['Gym', 'Developing Software', 'Gaming'];
 
 function About() {
   return (
@@ -36,6 +38,30 @@ function About() {
                   <div className="stat-label">{stat.label}</div>
                 </div>
               ))}
+            </div>
+
+            <div className="about-personal">
+              <div className="about-chip-group">
+                <h3 className="about-chip-title">Interests</h3>
+                <div className="about-chips">
+                  {INTERESTS.map((interest) => (
+                    <span className="about-chip" key={interest}>
+                      {interest}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="about-chip-group">
+                <h3 className="about-chip-title">Hobbies</h3>
+                <div className="about-chips">
+                  {HOBBIES.map((hobby) => (
+                    <span className="about-chip" key={hobby}>
+                      {hobby}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 

@@ -64,7 +64,7 @@ function Skills() {
     <section id="skills" className="section">
       <div className="container">
         <div className="section-head reveal">
-          <span className="section-eyebrow">What I work with</span>
+          <span className="section-eyebrow">What I have worked with</span>
           <h2 className="section-title">Skills &amp; Technologies</h2>
           <p className="section-subtitle">
             The languages, frameworks, and tools I reach for to ship software.

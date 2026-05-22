@@ -3,7 +3,7 @@ const PROJECTS = [
     title: 'ParkerStrat',
     image: '/parkerstrat-card.svg',
     description:
-      'Strategic planning software for organizing decisions, scenarios, and project direction in one focused workspace.',
+      'A financial hub for stock-market algorithms, bringing strategy tools, screeners, and market workflows into one focused workspace.',
     tags: ['Next.js', 'Prisma', 'SaaS', 'Product Design'],
     live: 'https://parker-strat.vercel.app/',
     section: 'featured',
@@ -14,8 +14,9 @@ const PROJECTS = [
   },
   {
     title: 'Screener',
+    image: '/screener-card.svg',
     description:
-      'A focused market screener for scanning opportunities and narrowing down stocks through a dedicated finance workflow.',
+      'A stock screener for searching tickers, scoring them against custom criteria, and pulling API data into a one-stop research workflow.',
     tags: ['Market Data', 'Screener', 'Next.js', 'Finance'],
     live: 'https://parker-strat.vercel.app/screener',
     section: 'featured',
@@ -26,6 +27,7 @@ const PROJECTS = [
   },
   {
     title: 'Algorithmic Strategy',
+    image: '/algorithmic-card.svg',
     description:
       'A strategy workspace for reviewing algorithmic trading logic, signals, and systematic market decision rules.',
     tags: ['Trading Algorithms', 'Strategy', 'Finance', 'Next.js'],
@@ -38,8 +40,9 @@ const PROJECTS = [
   },
   {
     title: 'Degenerate',
+    image: '/degenerate-card.svg',
     description:
-      'A Unity game project built around a fast, stylized gameplay loop and polished interactive systems.',
+      'A Unity simulator game with a core gameplay loop, many integrated interactive systems, roughly 100k lines of code, and 1,000+ scripts.',
     tags: ['Unity', 'C#', 'Game Dev', 'Interactive'],
     section: 'featured',
     featuredRank: 4,
