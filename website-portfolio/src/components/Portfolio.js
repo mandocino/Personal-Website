@@ -112,7 +112,7 @@ function ProjectGrid({
 
 function Portfolio() {
   const fullPortfolioUrl =
-    process.env.NEXT_PUBLIC_FULL_PORTFOLIO_URL || 'https://port.vercel.app/';
+    process.env.NEXT_PUBLIC_FULL_PORTFOLIO_URL || 'https://armando-mancino.vercel.app/';
 
   return (
     <section id="portfolio" className="section">

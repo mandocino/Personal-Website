@@ -5,7 +5,7 @@ const PROJECTS = [
     description:
       'Strategic planning software for organizing decisions, scenarios, and project direction in one focused workspace.',
     tags: ['Next.js', 'Prisma', 'SaaS', 'Product Design'],
-    live: 'https://parkerstrat-app.vercel.app/',
+    live: 'https://parker-strat.vercel.app/',
     section: 'featured',
     featuredRank: 1,
     size: 'feature',
@@ -17,7 +17,7 @@ const PROJECTS = [
     description:
       'A focused market screener for scanning opportunities and narrowing down stocks through a dedicated finance workflow.',
     tags: ['Market Data', 'Screener', 'Next.js', 'Finance'],
-    live: 'https://parkerstrat-app.vercel.app/screener',
+    live: 'https://parker-strat.vercel.app/screener',
     section: 'featured',
     featuredRank: 2,
     size: 'medium',
@@ -29,7 +29,7 @@ const PROJECTS = [
     description:
       'A strategy workspace for reviewing algorithmic trading logic, signals, and systematic market decision rules.',
     tags: ['Trading Algorithms', 'Strategy', 'Finance', 'Next.js'],
-    live: 'https://parkerstrat-app.vercel.app/algos',
+    live: 'https://parker-strat.vercel.app/algos',
     section: 'featured',
     featuredRank: 3,
     size: 'wide',
