@@ -40,7 +40,7 @@ const PROJECTS = [
   },
   {
     title: 'Degenerate',
-    image: '/degenerate-card.svg',
+    image: '/degenerate-card.png',
     description:
       'A Unity simulator game with a core gameplay loop, many integrated interactive systems, roughly 100k lines of code, and 1,000+ scripts.',
     tags: ['Unity', 'C#', 'Game Dev', 'Interactive'],
