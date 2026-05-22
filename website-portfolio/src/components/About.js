@@ -4,6 +4,7 @@ const STATS = [
   { num: '13', label: 'Languages Used' },
 ];
 
+
 function About() {
   return (
     <section id="about" className="section">
