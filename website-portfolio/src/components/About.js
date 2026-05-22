@@ -1,28 +1,53 @@
-function About({ isDarkMode }) {
+const STATS = [
+  { num: '11+', label: 'Years Coding' },
+  { num: '11', label: 'Projects Shipped' },
+  { num: '13', label: 'Languages Used' },
+];
+
+function About() {
   return (
-    <div id="about" expand="lg" className="section container pb-4">
-      <hr className="text-White" />
-      <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'text-Black'}`}>About Me</h1>
-      <div className="row align-items-center">
-        <div className="col-lg-6 mb-lg-0">
-          <div className="p-4">
-            <p className={`fs-3 text-center ${isDarkMode ? 'text-White' : 'text-Black'}`}>
-              Welcome to my website! I’m Armando Mancino, a Software Engineer based in Montreal, Canada. With over 11 years of programming experience, I’ve developed expertise in a wide range of languages and technologies.
-              My background includes working as a full stack engineer, handling both front-end development and low-level systems programming. Explore my work to see how my skills and experience align with your needs.
+    <section id="about" className="section">
+      <div className="container">
+        <div className="section-head reveal">
+          <span className="section-eyebrow">Get to know me</span>
+          <h2 className="section-title">About Me</h2>
+        </div>
+
+        <div className="about-grid">
+          <div className="reveal">
+            <p className="about-lead">
+              Welcome to my website! I&apos;m <strong>Armando Mancino</strong>, a
+              Software Engineer based in <strong>Montreal, Canada</strong>. With
+              over <strong>11 years of programming experience</strong>, I&apos;ve
+              built expertise across a wide range of languages and technologies.
             </p>
+            <p className="about-lead" style={{ marginTop: '1rem' }}>
+              My background spans <strong>full-stack engineering</strong> —
+              handling both front-end development and low-level systems
+              programming. Explore my work below to see how my skills and
+              experience can align with your needs.
+            </p>
+
+            <div className="stats">
+              {STATS.map((stat) => (
+                <div className="stat" key={stat.label}>
+                  <div className="stat-num">{stat.num}</div>
+                  <div className="stat-label">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="about-photo-wrap reveal" style={{ '--reveal-delay': '0.1s' }}>
+            <img
+              src="/profile_img.jpg"
+              alt="Armando Mancino"
+              className="about-photo"
+            />
           </div>
         </div>
-        <div className="col-lg-6 d-flex justify-content-center">
-          <img
-            src="/profile_img.jpg"
-            height="800"
-            width="500"
-            alt="Armando Mancino"
-            className="img-fluid rounded"
-          />
-        </div>
       </div>
-    </div >
+    </section>
   );
 }
 

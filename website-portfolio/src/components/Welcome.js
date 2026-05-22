@@ -1,100 +1,111 @@
-function Welcome({ isDarkMode }) {
-  return (
-    <>
-      <div
-        id="welcome"
-        expand="lg" className="d-flex flex-column justify-content-center align-items-center vh-100"
-      >
+const ROLES = [
+  { label: 'Full Stack Developer', icon: 'fas fa-layer-group' },
+  { label: 'Low-Level Engineer', icon: 'fas fa-microchip' },
+  { label: 'Front-End Programmer', icon: 'fas fa-code' },
+];
 
-        <div className="text-center pb-5">
-          <h1 className={`scroll-in-left ${isDarkMode ? 'text-White' : 'text-black'}`}>Hi there! 👋 I am</h1>
-          <h1 className={`scroll-in-right mb-4 ${isDarkMode ? 'text-White' : 'text-black'}`}>Armando Mancino.</h1>
-          <a
-            href="https://github.com/mandocino"
-            target="_blank"
-            className={`fs-5 mx-4 ${isDarkMode ? 'wh-White' : 'wh-Black'
-              }`}
-          >
-            <i className="fab fa-github fa-2x"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/armando-mancino-81382b170/"
-            target="_blank"
-            className={`fs-5 ${isDarkMode ? 'wh-White' : 'wh-Black'
-              }`}
-          >
-            <i className="fab fa-linkedin fa-2x"></i>
-          </a>
-        </div>
-        <div className="text-center pb-5">
-          <div className="d-inline-block">
-            <h1 className={`pb-2 ${isDarkMode ? 'text-White' : 'bg-light'}`}>Software Engineer</h1>
-            <h3>
-              <ul className="list-unstyled d-inline mb-0">
-                <li className={`d-inline-block pt-2 mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
-                  <i
-                    className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-Black'
-                      }`}
-                  ></i>
-                  Full Stack Developer
-                </li>
-                <li className={`d-inline-block pt-2 mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
-                  <i
-                    className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-Black'
-                      }`}
-                  ></i>
-                  Low Level Engineer
-                </li>
-                <li className={`d-inline-block pt-2 mx-3 ${isDarkMode ? 'text-White' : 'bg-light'}`}>
-                  <i
-                    className={`fas fa-check-circle me-2 ${isDarkMode ? 'text-White' : 'text-Black'
-                      }`}
-                  ></i>
-                  Front-End Programmer
-                </li>
-              </ul>
-            </h3>
-          </div>
-        </div>
-        <div className="text-center pb-5">
-          <p>
-            <a href="/ArmandoResume.pdf" target="_blank">
-              <button
-                type="button"
-                className={`btn btn-lg mx-2 ${isDarkMode
-                  ? 'wh-White border-White'
-                  : 'wh-Black border-Black'
-                  }`}
-              >
-                Resume
-              </button>
-            </a>
-            <a href="/degree.pdf" target="_blank">
-              <button
-                type="button"
-                className={`btn btn-lg mx-2 ${isDarkMode
-                  ? 'wh-White border-White'
-                  : 'wh-Black border-Black'
-                  }`}
-              >
-                Degree
-              </button>
-            </a>
-            <a href="#about">
-              <button
-                type="button"
-                className={`btn btn-lg mx-2 ${isDarkMode
-                  ? 'wh-White border-White'
-                  : 'wh-Black border-Black'
-                  }`}
-              >
-                About Me
-              </button>
-            </a>
-          </p>
-        </div>
+function Welcome() {
+  return (
+    <section id="welcome" className="hero">
+      <span className="hero-orb one" />
+      <span className="hero-orb two" />
+
+      <span className="hero-eyebrow reveal">
+        <span className="pulse" />
+        Available for new opportunities
+      </span>
+
+      <p className="hero-greeting reveal" style={{ '--reveal-delay': '0.05s' }}>
+        Hi there! 👋 I am
+      </p>
+
+      <h1 className="hero-name reveal" style={{ '--reveal-delay': '0.1s' }}>
+        <span className="grad">Armando Mancino</span>
+      </h1>
+
+      <h2 className="hero-title reveal" style={{ '--reveal-delay': '0.13s' }}>
+        Software Engineer
+      </h2>
+
+      <p className="hero-role reveal" style={{ '--reveal-delay': '0.16s' }}>
+        A Software Engineer in Montreal building full-stack products and
+        low-level systems with over a decade of programming experience.
+      </p>
+
+      <div className="hero-tags reveal" style={{ '--reveal-delay': '0.21s' }}>
+        {ROLES.map((role) => (
+          <span className="chip" key={role.label}>
+            <i className={role.icon} />
+            {role.label}
+          </span>
+        ))}
       </div>
-    </>
+
+      <div className="hero-ctas reveal" style={{ '--reveal-delay': '0.26s' }}>
+        <a href="#portfolio" className="btn-c btn-primary-c">
+          <i className="fas fa-folder-open" />
+          View My Work
+        </a>
+        <a
+          href="/ArmandoResume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-c btn-outline-c"
+        >
+          <i className="fas fa-file-arrow-down" />
+          Download Résumé
+        </a>
+        <a
+          href="/degree.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-c btn-outline-c"
+        >
+          <i className="fas fa-graduation-cap" />
+          Degree
+        </a>
+        <a href="#about" className="btn-c btn-outline-c">
+          <i className="fas fa-user" />
+          About Me
+        </a>
+        <a href="#contact" className="btn-c btn-outline-c">
+          <i className="fas fa-paper-plane" />
+          Get in Touch
+        </a>
+      </div>
+
+      <div className="hero-socials reveal" style={{ '--reveal-delay': '0.31s' }}>
+        <a
+          href="https://github.com/mandocino"
+          target="_blank"
+          rel="noreferrer"
+          className="social-btn"
+          aria-label="GitHub"
+        >
+          <i className="fab fa-github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/armando-mancino-81382b170/"
+          target="_blank"
+          rel="noreferrer"
+          className="social-btn"
+          aria-label="LinkedIn"
+        >
+          <i className="fab fa-linkedin-in" />
+        </a>
+      </div>
+
+      <div className="hero-extra reveal" style={{ '--reveal-delay': '0.36s' }}>
+        <a href="/degree.pdf" target="_blank" rel="noreferrer" className="text-link">
+          View my degree certificate →
+        </a>
+      </div>
+
+      <a href="#about" className="scroll-cue" aria-label="Scroll to About">
+        <span className="mouse" />
+        Scroll
+      </a>
+    </section>
   );
 }
 

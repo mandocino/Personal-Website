@@ -1,324 +1,148 @@
 import React from 'react';
+import { FEATURED_PROJECTS } from '../data/projects';
 
-function Portfolio({ isDarkMode }) {
+function ProjectCard({ project, index, compact = false }) {
+  const hasPrimaryLink = project.live && !project.private;
+  const MainContentTag = hasPrimaryLink ? 'a' : 'div';
+  const mainContentProps = hasPrimaryLink
+    ? {
+        href: project.live,
+        target: '_blank',
+        rel: 'noreferrer',
+        'aria-label': `Open ${project.title}`,
+      }
+    : {};
+
   return (
-    <div id="portfolio">
-      <div className="section container-fluid">
-        <hr className={`${isDarkMode ? 'text-White' : 'text-Black'}`} />
-        <h1 className={`text-center mb-4 ${isDarkMode ? 'text-White' : 'text-Black'}`}>Portfolio</h1>
-        <div className="row g-4">
-          <div className="col-sm-12 col-md-6 col-lg-3 ">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/StockAnalyzer.PNG"
-                className="card-img"
-                alt="Project 1"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">Stock Analyzer</h5>
-                <p className="card-title mb-3 p-2">
-                  Website that analyzes a stock to verify if it is
-                  a good purchase.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/mandocino/Stock-Analyzer"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                  <a
-                    href="https://mandoh.pythonanywhere.com/analyzeHomepage"
-                    className="text-white"
-                  >
-                    <i className="fas fa-external-link-alt fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+    <article
+      className={`project-card project-card-${project.size || 'medium'} ${
+        compact ? 'project-card-compact' : ''
+      } reveal`}
+      style={{
+        '--reveal-delay': `${(index % 3) * 0.08}s`,
+        '--project-accent': project.accent || 'var(--accent)',
+      }}
+    >
+      <MainContentTag className="project-main-link" {...mainContentProps}>
+        <div className={`project-thumb ${project.image ? '' : 'project-thumb-fallback'}`}>
+          {project.image ? (
+            <img src={project.image} alt={project.title} loading="lazy" />
+          ) : (
+            <span className="project-fallback-mark">
+              {project.title
+                .split(' ')
+                .map((word) => word[0])
+                .join('')
+                .slice(0, 3)}
+            </span>
+          )}
+        </div>
 
-          <div className="col-sm-12 col-md-6 col-lg-3">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/backtest.PNG"
-                className="card-img"
-                alt="Project 2"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">Stock Strategy Tester</h5>
-                <p className="card-title mb-3 p-2">
-                  Website that can create and test trading strategies based on
-                  various parameters, and a proprietary library I created to see how profitable it was.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/mandocino/Trading-Bot-MACD"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                  <a
-                    href="https://mandoh.pythonanywhere.com/backtestHomepage"
-                    className="text-white"
-                  >
-                    <i className="fas fa-external-link-alt fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+        <div className="project-body">
+          <div>
+            {project.status && <span className="project-status">{project.status}</span>}
+            <h3 className="project-title">{project.title}</h3>
           </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-3">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/sectorsearch.PNG"
-                className="card-img"
-                alt="Project 3"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">Stock Sector Scanner</h5>
-                <p className="card-title mb-3 p-2">
-                  Website that scans for all stocks within a specific sector.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/mandocino/Stock-Sector-Search"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                  <a
-                    href="https://mandoh.pythonanywhere.com/sectorAnalyzeUSA"
-                    className="text-white"
-                  >
-                    <i className="fas fa-external-link-alt fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-3">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/nksdsite.PNG"
-                className="card-img"
-                alt="Project 4"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">
-                  Website for Non-Profit Organization
-                </h5>
-                <p className="card-title mb-3 p-2">
-                  Website that was developed for a non-profit organization to
-                  educate the public on a Levy Vote.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://test85908.live-website.com/"
-                    className="text-white"
-                  >
-                    <i className="fas fa-external-link-alt fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <p className="project-desc">{project.description}</p>
+          <div className="project-tags">
+            {project.tags.map((tag) => (
+              <span className="tag" key={tag}>
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
-        <div className="row g-4">
-          <div className="col-sm-12 col-md-6 col-lg-3 ">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/iku.png"
-                className="card-img"
-                alt="Project 5"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">IKU App</h5>
-                <p className="card-title mb-3 p-2">
-                  Allow users to evaluate public transit accessibility in their personal points of interest.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/mandocino/SOEN490"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+      </MainContentTag>
 
-          <div className="col-sm-12 col-md-6 col-lg-3 ">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/telegram-buynsell.png"
-                className="card-img"
-                alt="Project 6"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">Transaction Bot</h5>
-                <p className="card-title mb-3 p-2">
-                  Scans the blockchain for a contract address and notifies through a message on telegram when details of a buy or sell that happens.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/mandocino/Transaction-Bot"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-3 ">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/aggregator.png"
-                className="card-img"
-                alt="Project 7"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">Aggregator</h5>
-                <p className="card-title mb-3 p-2">
-                  Condenses many crypto exchange order books into one order book and charts it.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/mandocino/Order-Book-Aggregator"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-3 ">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/arbitrage.png"
-                className="card-img"
-                alt="Project 8"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">Arbitrage Bot</h5>
-                <p className="card-title mb-3 p-2">
-                  Scans various desired crypto exchanges and identifies when an opportunity exists to arbitrage trade.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/mandocino/Arbitrage-Bot"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row g-4">
-          <div className="col-sm-12 col-md-6 col-lg-3 ">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/volumescanner.PNG"
-                className="card-img"
-                alt="Project 9"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">Stock Volume Scanner</h5>
-                <p className="card-title mb-3 p-2">
-                  Website that scans stocks which have unusual volume compared
-                  to their daily average volume on various exchanges.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/mandocino/Stock-Volume-Scanner"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                  <a
-                    href="https://mandoh.pythonanywhere.com/volumeUSA"
-                    className="text-white"
-                  >
-                    <i className="fas fa-external-link-alt fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-3 ">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/cryptodashboard.PNG"
-                className="card-img"
-                alt="Project 10"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">Crypto Holdings Dashboard</h5>
-                <p className="card-title mb-3 p-2">
-                  Website that displays crypto holdings from a connected wallet.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/Cinodevv/CryptoDashboard"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                  <a
-                    href="https://crypto-dashboard-qjicjjfp7-cinodevv.vercel.app/overviewEthDashboard"
-                    className="text-white"
-                  >
-                    <i className="fas fa-external-link-alt fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-3 ">
-            <div className="card text-white bg-dark text-center mb-4">
-              <img
-                src="/cryptoapi.PNG"
-                className="card-img"
-                alt="Project 11"
-              />
-              <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center p-0 overlay-content">
-                <h5 className="card-title mb-3">Crypto Api Platform</h5>
-                <p className="card-title mb-3 p-2">
-                  Website that displays information regarding cryptocurrencies
-                  and news articles.
-                </p>
-                <div className="d-flex gap-3">
-                  <a
-                    href="https://github.com/Cinodevv/CryptoDashApi"
-                    className="text-white"
-                  >
-                    <i className="fab fa-github fa-2x"></i>
-                  </a>
-                  <a
-                    href="https://crypto-dash-api.vercel.app/"
-                    className="text-white"
-                  >
-                    <i className="fas fa-external-link-alt fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="project-links">
+        {project.private ? (
+          <span className="project-link project-link-private">
+            <i className="fas fa-lock" />
+            {project.privateMessage || 'Private'}
+          </span>
+        ) : (
+          <>
+            {project.github && (
+              <a
+                className="project-link"
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-github" />
+                Source
+              </a>
+            )}
+            {project.live && !project.hideLiveLink && (
+              <a
+                className="project-link"
+                href={project.live}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fas fa-arrow-up-right-from-square" />
+                Live Demo
+              </a>
+            )}
+          </>
+        )}
       </div>
+    </article>
+  );
+}
+
+function ProjectGrid({
+  projects = FEATURED_PROJECTS,
+  variant = 'standard',
+  compact = false,
+}) {
+  return (
+    <div className={`project-grid project-grid-${variant}`}>
+      {projects.map((project, index) => (
+        <ProjectCard
+          project={project}
+          index={index}
+          compact={compact}
+          key={project.title}
+        />
+      ))}
     </div>
   );
 }
 
+function Portfolio() {
+  const fullPortfolioUrl =
+    process.env.NEXT_PUBLIC_FULL_PORTFOLIO_URL || 'https://port.vercel.app/';
+
+  return (
+    <section id="portfolio" className="section">
+      <div className="container">
+        <div className="section-head reveal">
+          <span className="section-eyebrow">Selected Work</span>
+          <h2 className="section-title">Featured Work</h2>
+          <p className="section-subtitle">
+            A curated showcase of product-focused apps, finance workflows, and
+            deployed tools with real project structure.
+          </p>
+        </div>
+
+        <ProjectGrid projects={FEATURED_PROJECTS} variant="featured" />
+
+        <div className="portfolio-actions reveal">
+          <a
+            href={fullPortfolioUrl}
+            className="btn-c btn-primary-c"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fas fa-folder-open" />
+            Explore All Projects
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default Portfolio;
+export { ProjectGrid };
